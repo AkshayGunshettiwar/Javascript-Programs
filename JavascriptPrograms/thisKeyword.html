@@ -1,0 +1,50 @@
+<!-- This keyword refers to the object it belongs to -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log(this);
+        // refers to its window Object(global oject)
+
+        // const sum=()=>{
+        //     var add=2+2;
+        //     console.log("addition:" +add);
+        //     console.log(this);                               //refers to the global object
+        // }
+        // sum();
+
+
+        const obj = {
+            name: 'akshay',
+            age: 21,
+
+            sum : function(){
+                var add = 2 + 2;
+                console.log("addition:" + add);            //refers to the owner object
+                console.log(this);
+
+                function child(){
+                    var name="sahil";
+                    console.log("child name:" +name);
+                    console.log(this);                        //its a regular function & will refers to window object
+                }
+                child();
+            }
+
+            
+        }
+        obj.sum();
+    </script>
+</body>
+
+</html>

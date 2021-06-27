@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <h1 id="heading">Heading</h1>
+        <p id="pid"><b>This is a paragraph</b></p>
+    </div>
+    <hr>
+
+    <script>
+        //Accessing first child item 
+
+        var par= document.getElementById("parent").firstElementChild.innerHTML;
+        document.write(par)
+
+
+        //Accessing last child item
+        var last=document.getElementById("parent").lastElementChild.innerHTML;
+        document.write(last)
+
+    </script>
+
+
+    
+    
+</body>
+
+</html>

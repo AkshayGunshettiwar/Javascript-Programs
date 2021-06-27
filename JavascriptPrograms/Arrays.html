@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Js Arrays
+
+        var fruits=["apple", "grapes","mango","banana"]
+        console.log(fruits[0])
+        console.log(fruits[1])
+
+
+        //Normal For LOOP
+
+        for(var i=0; i<fruits.length; i++){
+            console.log(fruits[i])
+        }
+
+        //for of loop
+
+        for(var fruit of fruits){
+            console.log(fruit)
+        }
+
+        //for in loop
+
+        var colors=["yellow","blue","green","red"]  //It can be used to iterate the objects
+        for (var color in colors){
+            console.log(color)
+        }
+
+        //for each
+        colors.forEach(function(item){
+            console.log(item)
+        })
+
+    </script>
+</body>
+</html>
+

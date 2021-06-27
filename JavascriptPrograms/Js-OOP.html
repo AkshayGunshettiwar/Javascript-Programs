@@ -1,0 +1,30 @@
+<!-- An object is an instance of class and we can create amny objects and they all share methods and properties -->
+
+<script>
+
+class Student{
+    constructor(name, age, Class){
+        this.name=name;
+        this.age=age;
+        this.Class=Class;
+         
+    }
+
+}
+
+class Player extends Student{
+    
+    constructor(name, age, Class,game){
+        super(name, age, Class);
+        this.game=game;
+    }
+    biodata(){
+         console.log(`Hi my name is ${this.name}. My age is ${this.age} and I study in ${this.Class}th class and I play ${this.game}`);
+     }
+}
+
+let obj=new Player("akshay", 20, 12,"football");
+obj.biodata();
+
+
+</script>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: cadetblue;
+            border:2px solid black;
+            margin: 3px 0;
+            padding: 9px;
+        }
+        .bg{
+            background-color: chocolate;
+        }
+        .color{
+            color: white;
+            
+        }
+        .size{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>JS Demo</h1>
+    <p>This is a paragraph</p>
+    <h2 id="h2id">
+
+    </h2>
+    <button type="button" onclick="changeColor()">Change Color</button>
+    
+    <button id="changeColor">Change Color(addeventlist)</button>
+    <script src="scr.js"></script>
+
+    <script>
+        //accessing attribute
+
+        var btn=document.getElementById("changeColor")
+        var id=btn.getAttribute("id")
+        document.write(id) 
+    </script>-->
+
+
+        <h1>Welcome to my page</h1>
+        <div id="firstcontainer" class="container">
+            <button id="click" onclick="clicked()">Click</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis tenetur fugiat adipisci animi. Similique.
+            </p>
+        </div>
+        <p class="container">This is a paragraph</p>
+
+    <script>
+
+        let a=document.getElementById('click');
+      //  console.log(a);
+
+        let aClass=document.getElementsByClassName('container');
+        // console.log(aClass);
+
+        // aClass[0].style.background="red";
+
+    //or adding a class that does not exist
+        
+        aClass[0].classList.add('bg');
+        aClass[0].classList.add('color');
+
+        aClass[0].innerHTML;
+
+        tn=document.getElementsByTagName('div');
+       // console.log(tn);
+        x=document.createElement('p');
+        x.innerText="this is created para"
+        tn[0].appendChild(x);
+
+        //selecting using query
+        v=document.querySelector('.container')
+        //console.log(v);
+
+        v=document.querySelectorAll('.container')
+       // console.log(v);
+
+
+        //EVENTS
+       const clicked=()=>{
+           // console.log("button is clicked");
+       }
+
+       window.onload=function(){
+          // console.log("document was loaded");
+       }
+
+       firstcontainer.addEventListener('click', function(){
+           document.querySelectorAll('.container')[1].innerHTML="<b>hello!hzja</b>"
+          // console.log("clicked");
+       })
+
+
+       //set timeout and set interval
+
+       func=()=>{
+           console.log("i am your log");
+       }
+       
+      // setTimeout(func,2000);        //used for scheduling
+
+       setInterval(func,2000);       //for repeadetely
+
+    </script>
+</body>
+</html>

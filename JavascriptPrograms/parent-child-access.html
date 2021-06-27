@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title">h2 child</h2>
+
+    <ul id="myList">
+        <li>Akshay</li>
+        <li>Subhash</li>
+        <li>Gunshettiwar</li>
+    </ul>
+    <hr>
+
+    <script>
+        //accessing content of html element
+        // alert(document.body.innerHTML)
+    </script>
+
+    <!-- <script>
+        //to access children of a body
+        var child = document.body.children;
+        document.write(child[3].nodeName)
+        console.log(child)
+    </script> -->
+
+    <!-- <script>
+        //add a new child in body
+        var parag = document.createElement('p');
+        var textNode = document.createTextNode("This is new para");
+        parag.appendChild(textNode);
+        // parag.id='parId'
+        // document.getElementById('parId')
+        console.log(parag)
+        document.body.appendChild(parag).style.color="red";
+    </script> -->
+
+    <!-- <script>
+        //access first child and last child
+
+        var list = document.querySelector('ul')
+        // console.log(list)
+        // console.log(list.firstChild)
+        // console.log(list.lastChild)
+        var liTagList = document.getElementById('myList').getElementsByTagName('li')
+        for (let i = 0; i < liTagList.length; i++) {
+            console.log(liTagList[i])
+        }
+    </script> -->
+
+   <script>
+    //access first sibling
+    var Fsibling=title.nextElementSibling;
+    //will give ul; next element of h2
+    var Fsib=title.nextElementSibling.nextElementSibling;
+    //will give hr; as it is the next sibling of next sibling
+    console.log(Fsibling);
+    console.log(Fsib)
+
+
+
+    // let parentList = document.getElementById('myList');
+    // let listChild = parentList.children;
+    // document.write(listChild);
+
+    // var s = listChild.item[2];
+    // document.write(s);
+    </script>
+
+</body>
+
+</html>

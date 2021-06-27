@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <p id="pid"> Paragraph tag</p>
+    <h1 class="h1class">Heading tag</h1>
+    <h1 class="h1class">Heading tag1</h1>
+    <h1 class="h1class">Heading tag2</h1>
+    <hr>
+    <script>
+        //accessing element by id
+        var t=document.getElementById('pid')
+        document.write(t)
+
+         //accessing content of element by id
+        var cont=document.getElementById("pid").innerHTML;
+        document.write(cont) 
+
+       // accessing content of element by class
+        var b=document.getElementsByClassName('h1class')[0].innerHTML;        //to access it we have to provide index no
+        document.write(b)
+
+        //accessing content of element by class when there are more than 1
+        var p=document.getElementsByClassName("h1class")[1].innerHTML;
+        document.write(p) 
+
+        //accessing element by tag name
+        var tag=document.getElementsByTagName('h1')
+        document.write(tag)
+        console.log(tag)
+        console.log(tag)
+
+        //accessing first child element
+        var ch=document.querySelector('h1').innerHTML
+        document.write(ch)
+
+
+    </script>
+</body>
+</html>

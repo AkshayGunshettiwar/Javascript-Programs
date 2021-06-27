@@ -1,0 +1,65 @@
+<!-- Closure: accessability is decided based on the scope -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function checkScope(){
+        //     let number=10
+        //     console.log(number)
+        // }
+
+        // function checkScope1(){
+        //     let number1=20
+        //     console.log(number1)
+        // }
+        // checkScope()
+        // checkScope1()
+        // console.log(number)       //reference error
+
+
+            function OuterFunction(){
+                let a=50
+
+                function innerFunction(){
+                    let b=100
+                    console.log(a);
+
+                    function newFunction(){
+                        console.log(a+" "+b)
+                    }
+                    return newFunction()
+                }
+                //innerFunction()
+                return innerFunction
+            }
+        //    let innerFunction=  OuterFunction();        //function expression
+        //    innerFunction();
+        let newFunction=  OuterFunction()
+        newFunction();
+
+
+    //     const outerFunction = (a) => {
+    //         let b = 10;
+    //         const innerFunction = () => {
+    //             let sum = a + b;
+    //             console.log(sum);
+    //         }
+    //         // innerFunction()
+    //         return innerFunction;
+    //     }
+    //    // outerFunction(4);
+    //    let inner=outerFunction(5);
+    //    inner();
+    </script>
+</body>
+
+</html>

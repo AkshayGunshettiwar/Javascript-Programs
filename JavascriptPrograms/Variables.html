@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Keywords in JS
+    1)var:- It is global scoped
+    2)let:- It is block scoped
+    3)const:-It is block scoped
+-->
+
+    <script>
+        //HOISTING:- variable and function declaration are hoisted or moved to top.
+
+        // In VAR keyword declaration and redeclaration is possible.
+
+        // var name="javascript"
+        // console.log(name)
+
+        // var name   //Declaration
+        // console.log(name)
+        // name='javascript basics'  //initialization
+
+         // var fname="akshay"
+        // var fname="sahil"
+        // console.log(fname)   //it will override the name 
+
+        // fname='javascript ex'
+        // console.log(fname)
+        // var name
+
+        // for(var i=0; i<5; i++){
+        //     console.log(i)    //0 to 4
+        // }
+        // console.log(i)          //scope is global so it will ++ the i even after out of the block.
+
+
+
+        //LET keyword only supports declaration, redeclaration is not allowed
+        // for(let i=0; i<5; i++){
+        //     console.log(i)    //0 to 4
+        // }
+        // console.log(i)          // scope is only inside the block...so outside the block i is undefined
+
+
+        // let fname="akshay"
+        // let fname="ak"
+        // console.log(fname)     //redeclaration is not allowed
+
+        //CONST does not support redeclaration
+
+        const PI=3.14
+        // PI=6
+        console.log(PI)
+    </script>
+
+</body>
+</html>

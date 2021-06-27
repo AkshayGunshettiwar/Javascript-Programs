@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+           
+           //basic 
+           let x=3
+           console.log(x)
+
+           //adding string to the beginning to easily identify what you are logging
+           let y=3
+           console.log("y:", y)
+
+           //logging multiple values
+           let a=6, b=8, c=5
+           console.log({a,b,c})
+
+           //logging with object
+            var user={
+                name:"akshay",
+                contact:{
+                    email:"gunshettiwarakshay066@gmail.com"
+                }
+            }
+
+            console.log(user)   //it will print the properties within the object
+            console.log({user})  //it will identify the object as user and print properties within the object
+
+
+            //variables within log
+            console.log("%s is %d years old.", "akshay", 22)   //%s refers to string value and %d refers to digit value
+
+            //variations of log
+            console.log("hello")
+            console.info("info")
+            console.debug("debug")
+            console.warn("warn")      //yellow
+            console.error('error')   //will be colored red
+
+            //optional log
+           // console.clear()
+            let isItworking=true
+            console.assert(isItworking, "this is the reason why")
+
+
+            //tables
+            let devices=[
+                {
+                    name:'iphone',
+                    brand:'apple'
+                },
+                {
+                    name:'galaxy',
+                    brand:'samsung'
+                }
+            ]
+            console.table(devices)
+
+            //if we want only brands
+            console.log(devices,['brand'])
+
+
+            var pr={
+                name:'akshay',
+                city:'pune',
+                Email:{
+                    email:'gunshettiwarakshay@gmail.com'
+                }
+            }
+            console.log(pr.Email)
+
+            for(var p in pr){
+                console.log(pr[p])
+            }
+
+            //styling logs
+
+            console.log("%c This is yellow text on a blue background.","color:yellow; background-color:blue")
+       </script>
+</body>
+</html>

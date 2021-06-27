@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let db = [{
+            username: 'akshay',
+            password: 'a@123'
+        }];
+
+        let status = [{
+                name: 'SahilGun',
+                status: 'Online'
+            },
+            {
+                name: 'Pratham',
+                status: 'cant talk'
+            }
+        ];
+
+        const username = prompt('Enter Your Username');
+        const password = prompt('Enter Your Password');
+
+        const login = (user, pass) => {
+            if (user === db[0].username && pass === db[0].password) {
+                //console.log(status)
+
+                //using for of loop
+                for (let value of status) {
+                    console.log(value);
+                }
+            }else{
+                alert("Incorrect Username and Password");
+            }
+        }
+        login(username, password);
+    </script>
+</body>
+
+</html>

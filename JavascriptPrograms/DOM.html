@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #content {
+            background-color: aqua;
+        }
+
+        #hello {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="dom" name="domname">DOM (Document Object Methods)</h1>
+    <!-- with some additional information we call element -->
+    <p>This is Dom Demo</p>
+    <!-- <h1></h1>                                    only tag  -->
+    <p id="pid"></p>
+    <div id="new">
+
+    </div>
+    <button type="button" onclick="showdData()">Display</button>
+    <script>
+        function showdData() {
+            document.getElementById("pid").innerHTML = "New Content"
+
+            document.getElementById("dom").innerHTML = "Content changed"
+
+            document.getElementById("pid").style.background = "yellowgreen"
+
+            //creating element by js and appending it to the document
+
+            var para = document.createElement("p");
+            var node = document.createTextNode("This is my paragraph");
+            para.appendChild(node);
+            var element = document.getElementById("new");
+            element.appendChild(para);
+            para.id = 'hello'
+            document.getElementById('hello')
+
+
+            // let paragraph=document.createElement('p');
+            // paragraph.id='content';
+            // paragraph.innerHTML='<p>Creating New element</p>';
+            // document.body.appendChild(paragraph);
+            // document.getElementById('content');
+        }
+    </script>
+</body>
+
+</html>
